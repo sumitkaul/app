@@ -1,11 +1,10 @@
-package activities.suport.app;
+package activities.support.app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import pk.nimgade.com.myapp.MainActivity;
 import pk.nimgade.com.myapp.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                                 /* Create an intent that will start the main activity. */
-                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
                 SplashActivity.this.startActivity(mainIntent);
 
                                 /* Finish splash activity so user cant go back to it. */
